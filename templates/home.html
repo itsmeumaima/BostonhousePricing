@@ -1,15 +1,94 @@
 <!DOCTYPE html>
+
 <html >
+
 
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   
+  <style>
+    /* General Page Styling */
+    body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    min-height: 100vh;  /* Changed from height: 100vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    }
+    /* Login Container */
+    .login {
+        width: 400px;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .login:hover {
+        transform: scale(1.03);
+    }
+
+    /* Title */
+    h1 {
+        font-family: 'Pacifico', cursive;
+        color: #243B55;
+        margin-bottom: 20px;
+    }
+
+    /* Input Fields */
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        background: #f9f9f9;
+        transition: border 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus {
+        border: 2px solid #243B55;
+        outline: none;
+        background: #fff;
+    }
+
+    /* Button Styling */
+    button {
+        background: linear-gradient(to right, #36D1DC, #5B86E5);
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background: linear-gradient(to right, #5B86E5, #36D1DC);
+        transform: translateY(-2px);
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 600px) {
+        .login {
+            width: 90%;
+            padding: 20px;
+        }
+    }
+  </style>
 </head>
 
 <body>
